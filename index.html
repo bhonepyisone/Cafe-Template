@@ -12,7 +12,6 @@
 
     <!-- ===== HEADER ===== -->
     <header class="main-header">
-        <!-- UPDATED: The entire logo container is now a clickable link to home -->
         <a href="index.html" class="header-link">
             <div class="logo-container">
                 <lottie-player src="logo-animation.json" background="transparent" speed="1" style="width: 80px; height: 80px;" loop autoplay></lottie-player>
@@ -41,24 +40,25 @@
         </div>
     </section>
 
-    <!-- ===== NEW PHOTO SLIDESHOW ===== -->
-    <section class="photo-slideshow">
-        <div class="slideshow-wrapper">
-            <div class="slide"><img src="https://placehold.co/1920x1080/A87C7C/FFFFFF?text=Artisan+Bread" alt="Artisan bread"></div>
-            <div class="slide"><img src="https://placehold.co/1920x1080/5C3D2E/FFFFFF?text=Cozy+Ambiance" alt="Cozy cafe ambiance"></div>
-            <div class="slide"><img src="https://placehold.co/1920x1080/EAD9C8/5C3D2E?text=Signature+Brunch" alt="Signature brunch dish"></div>
-            <div class="slide"><img src="https://placehold.co/1920x1080/3D2C22/FFFFFF?text=Gourmet+Dinner" alt="Gourmet dinner plate"></div>
-            <div class="slide"><img src="https://placehold.co/1920x1080/7a523f/FFFFFF?text=Fresh+Coffee" alt="Freshly brewed coffee"></div>
-            <!-- Duplicate the first slide for a seamless loop -->
-            <div class="slide"><img src="https://placehold.co/1920x1080/A87C7C/FFFFFF?text=Artisan+Bread" alt="Artisan bread"></div>
-        </div>
-    </section>
-
     <!-- ===== ACTION BUTTONS ===== -->
     <section class="action-buttons">
         <a href="menu.html" class="btn">View Our Menu</a>
         <a href="branches.html" class="btn">Our Branches</a>
         <a href="#footer" class="btn">Contact Us</a>
+    </section>
+
+    <!-- ===== PHOTO SLIDESHOW (MOVED TO CORRECT POSITION) ===== -->
+    <section class="photo-slideshow">
+        <div class="slideshow-wrapper">
+            <!-- Assumes you have images named slide1.jpg, slide2.jpg, etc. in your folder -->
+            <div class="slide"><img src="slide1.jpg" alt="Artisan bread and pastries"></div>
+            <div class="slide"><img src="slide2.jpg" alt="Cozy and warm cafe ambiance"></div>
+            <div class="slide"><img src="slide3.jpg" alt="A signature brunch dish served fresh"></div>
+            <div class="slide"><img src="slide4.jpg" alt="An elegant gourmet dinner plate"></div>
+            <div class="slide"><img src="slide5.jpg" alt="A cup of freshly brewed artisan coffee"></div>
+            <!-- Duplicate the first slide for a seamless loop -->
+            <div class="slide"><img src="slide1.jpg" alt="Artisan bread and pastries"></div>
+        </div>
     </section>
 
     <!-- ===== FOOTER ===== -->
