@@ -55,6 +55,15 @@ h1, h2, h3, h4 {
     border-bottom: 1px solid var(--secondary-color);
 }
 
+/* NEW: Style for the header link */
+.header-link {
+    text-decoration: none;
+    display: inline-block;
+}
+.header-link:hover {
+    text-decoration: none;
+}
+
 .logo-container {
     display: flex;
     justify-content: center;
@@ -65,6 +74,7 @@ h1, h2, h3, h4 {
 .logo-text h1 {
     margin: 0;
     font-size: 2rem;
+    color: var(--primary-color); /* Ensure color is set directly */
 }
 .logo-text p, .logo-text span {
     margin: 0;
@@ -82,13 +92,11 @@ h1, h2, h3, h4 {
     height: 80vh;
     overflow: hidden;
 }
-
 .fullscreen-video {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 .video-overlay {
     position: absolute;
     top: 0;
@@ -101,7 +109,7 @@ h1, h2, h3, h4 {
 /* --- ABOUT US & BUTTONS --- */
 .about-us, .action-buttons {
     text-align: center;
-    padding: 60px 0;
+    padding: 60px 20px;
 }
 .about-us h2 {
     font-size: 2.5rem;
@@ -113,9 +121,9 @@ h1, h2, h3, h4 {
     font-size: 1.1rem;
     line-height: 1.8;
 }
-
 .action-buttons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding-top: 0;
@@ -134,6 +142,46 @@ h1, h2, h3, h4 {
     color: white;
     transform: translateY(-3px);
 }
+
+/* --- NEW PHOTO SLIDESHOW STYLES --- */
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    16% { transform: translateX(0%); } /* Pause on first image */
+    20% { transform: translateX(-100%); }
+    36% { transform: translateX(-100%); } /* Pause on second image */
+    40% { transform: translateX(-200%); }
+    56% { transform: translateX(-200%); } /* Pause on third image */
+    60% { transform: translateX(-300%); }
+    76% { transform: translateX(-300%); } /* Pause on fourth image */
+    80% { transform: translateX(-400%); }
+    96% { transform: translateX(-400%); } /* Pause on fifth image */
+    100% { transform: translateX(-500%); }
+}
+
+.photo-slideshow {
+    width: 100%;
+    overflow: hidden;
+    height: 60vh; /* Adjust height as needed */
+}
+
+.slideshow-wrapper {
+    width: 600%; /* 100% for each of the 5 slides + 1 duplicate */
+    height: 100%;
+    display: flex;
+    animation: slide 30s infinite linear; /* 30s total duration */
+}
+
+.slide {
+    width: 16.666%; /* 100% / 6 slides */
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 /* --- FOOTER --- */
 .main-footer-section {
