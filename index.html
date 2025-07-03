@@ -12,14 +12,17 @@
 
     <!-- ===== HEADER ===== -->
     <header class="main-header">
-        <div class="logo-container">
-            <lottie-player src="logo-animation.json" background="transparent" speed="1" style="width: 80px; height: 80px;" loop autoplay></lottie-player>
-            <div class="logo-text">
-                <h1>Voz Cafe & Restaurant</h1>
-                <p>Your Enjoyable Spot</p>
-                <span>Cafe • Brunch • Dinner</span>
+        <!-- UPDATED: The entire logo container is now a clickable link to home -->
+        <a href="index.html" class="header-link">
+            <div class="logo-container">
+                <lottie-player src="logo-animation.json" background="transparent" speed="1" style="width: 80px; height: 80px;" loop autoplay></lottie-player>
+                <div class="logo-text">
+                    <h1>Voz Cafe & Restaurant</h1>
+                    <p>Your Enjoyable Spot</p>
+                    <span>Cafe • Brunch • Dinner</span>
+                </div>
             </div>
-        </div>
+        </a>
     </header>
 
     <!-- ===== FULL-SCREEN VIDEO ===== -->
@@ -35,6 +38,19 @@
             <p>
                 Voz Cafe is an artisan bakery and café dedicated to craft. The philosophy behind our slow-fermented breads—using exceptional local ingredients with no compromises—is at the heart of our entire menu. Experience our commitment to quality in every bite.
             </p>
+        </div>
+    </section>
+
+    <!-- ===== NEW PHOTO SLIDESHOW ===== -->
+    <section class="photo-slideshow">
+        <div class="slideshow-wrapper">
+            <div class="slide"><img src="https://placehold.co/1920x1080/A87C7C/FFFFFF?text=Artisan+Bread" alt="Artisan bread"></div>
+            <div class="slide"><img src="https://placehold.co/1920x1080/5C3D2E/FFFFFF?text=Cozy+Ambiance" alt="Cozy cafe ambiance"></div>
+            <div class="slide"><img src="https://placehold.co/1920x1080/EAD9C8/5C3D2E?text=Signature+Brunch" alt="Signature brunch dish"></div>
+            <div class="slide"><img src="https://placehold.co/1920x1080/3D2C22/FFFFFF?text=Gourmet+Dinner" alt="Gourmet dinner plate"></div>
+            <div class="slide"><img src="https://placehold.co/1920x1080/7a523f/FFFFFF?text=Fresh+Coffee" alt="Freshly brewed coffee"></div>
+            <!-- Duplicate the first slide for a seamless loop -->
+            <div class="slide"><img src="https://placehold.co/1920x1080/A87C7C/FFFFFF?text=Artisan+Bread" alt="Artisan bread"></div>
         </div>
     </section>
 
