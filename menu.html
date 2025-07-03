@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Voz Cafe & Restaurant</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
 
-    <!-- ===== HEADER (Same as index.html but simplified) ===== -->
     <header class="main-header page-header">
-         <div class="logo-container">
-            <lottie-player src="logo-animation.json" background="transparent" speed="1" style="width: 80px; height: 80px;" loop autoplay></lottie-player>
-            <div class="logo-text">
-                <h1>Voz Cafe & Restaurant</h1>
+         <a href="index.html" class="header-link">
+            <div class="logo-container">
+                <lottie-player src="logo-animation.json" background="transparent" speed="1" style="width: 80px; height: 80px;" loop autoplay></lottie-player>
+                <div class="logo-text">
+                    <h1>Voz Cafe & Restaurant</h1>
+                </div>
             </div>
-        </div>
+        </a>
         <nav class="main-nav">
             <a href="index.html">Home</a>
             <a href="menu.html" class="active">Menu</a>
@@ -27,7 +29,6 @@
         <h2>Our Menu</h2>
         <p class="menu-intro">Freshly baked goods, signature brunch plates, and hearty dinner options. Each branch may have seasonal specials.</p>
         
-        <!-- Ekkamai Menu -->
         <div class="menu-section">
             <h3>Ekkamai Branch Menu</h3>
             <div class="menu-grid">
@@ -40,7 +41,6 @@
             </div>
         </div>
 
-        <!-- Siam Discovery Menu -->
         <div class="menu-section">
             <h3>Siam Discovery Branch Menu</h3>
             <div class="menu-grid">
@@ -52,7 +52,6 @@
             </div>
         </div>
 
-        <!-- Mahanakhon Menu -->
         <div class="menu-section">
             <h3>Mahanakhon Branch Menu</h3>
             <div class="menu-grid">
@@ -64,8 +63,6 @@
             </div>
         </div>
     </main>
-    
-    <!-- You can add the same footer here if you like -->
 
 </body>
 </html>
